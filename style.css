@@ -1,0 +1,102 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fcf8f2;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.search-form {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+input, select, button {
+    padding: 8px 12px;
+    font-size: 15px;
+}
+
+button {
+    cursor: pointer;
+    background-color: #e0e0e0;
+    border: 1px solid #aaa;
+    border-radius: 4px;
+}
+
+button:hover {
+    background-color: #d0d0d0;
+}
+
+.results-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.movie-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #fff;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    text-align: left;
+}
+
+.movie-info {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.movie-info img {
+    width: 50px;
+    height: 75px;
+    object-fit: cover;
+}
+
+.pagination {
+    display: flex;
+    gap: 5px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.pagination button.active {
+    background-color: #999;
+    color: #fff;
+}
+
+.details-section {
+    text-align: left;
+    background: #fff;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.details-content {
+    display: flex;
+    gap: 20px;
+}
+
+.details-content img {
+    width: 150px;
+    height: 225px;
+    object-fit: cover;
+}
+
+.error-text {
+    color: #8b0000;
+    font-weight: bold;
+}

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Пошук фільмів (OMDB API)</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Movie Search</h1>
+
+        <form id="searchForm" class="search-form">
+            <input type="text" id="movieTitle" placeholder="Title..." required>
+            <select id="movieType">
+                <option value="">All</option>
+                <option value="movie">movie</option>
+                <option value="series">series</option>
+                <option value="episode">episode</option>
+            </select>
+            <button type="submit">Search</button>
+        </form>
+
+        <div id="resultsContainer" class="results-list"></div>
+        <div id="paginationContainer" class="pagination"></div>
+        <div id="detailsContainer" class="details-section"></div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
